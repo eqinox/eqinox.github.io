@@ -1,0 +1,217 @@
+body{
+    background-image: url('../Images/background.jpg');
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+nav{
+    flex-basis: 100%;
+    height: 233px;
+    background-color:darkblue;    
+    margin-bottom: 20px;
+    position: relative;
+    width: 92%;
+    background-image: url('../Images/nav-logo10.jpg');
+    
+}
+nav > img{
+    display: none;
+}
+#secondNav{
+    display: none;
+}
+#navigation{
+    position: fixed;
+    width: 100%;
+    background: black;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.nav-menu{
+    flex-basis: 100px;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}       
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+    
+#categories > article{
+    background-color: rgba(174, 201, 22, 0.2);
+    margin-bottom: 20px;
+}
+
+#categories article h1{
+    background-color: darkcyan;
+    border: 1px solid lightgray;
+}
+.mainContent{
+    background-color: darkred;
+    border: 1px solid lightgray;
+    font-size: 1.3em;
+}
+
+.dropdown-content{
+    list-style-type: none;
+    margin: auto;
+    padding: 0px;
+    background-color: rgba(91, 91, 91, 0.8);
+    position: absolute;
+    top: 0px;
+    width: 240px;
+    height: 125px;
+    border-radius: 5px;
+    display: none;
+}
+    .dropdown-content li{
+        height: 30px;
+        top: 30px;
+        position: relative;
+    }
+    .dropdown-content li a{
+        color: rgb(208, 125, 34);
+        cursor: none;
+    }
+
+
+
+
+
+nav a{
+    color: limegreen;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: none;
+    color: darkgreen;
+    border: 5px outset rgba(14, 97, 43, 0.7);
+    padding: 5px;
+}
+nav a:active{
+    text-decoration: none;
+    border: 5px inset rgba(14, 97, 43, 0.7);
+    padding: 5px;
+}
+nav a::link{
+    color:pink;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+section > article{
+    flex-grow: 1;
+}
+section > article > img{
+    max-width: 100%;
+    height: 315px;
+}
+
+#leftSidebar{
+    order:1;
+}
+
+#rightSidebar{
+    order: 3;
+}
+
+aside{
+    background-color: rgba(20, 100, 22, 0.2);
+    height: 100%;
+}
+aside ul{
+    list-style: none;
+    padding-right: 40px;
+}
+aside > h2{
+    color: limegreen;
+    text-align: center;
+}
+aside ul li{
+    color: darksalmon;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+aside ul li:hover{
+    cursor: pointer;
+    background-color: orangered;
+    border-radius: 5px;
+}
+aside ul li a{
+    color: darksalmon;
+    text-decoration: none;
+}
+
+#categories{
+    width: 50%;
+    display: inline-block;
+    order: 2;
+}
+
+#categories ul{
+    list-style-type: none;   
+    background-color: blue;
+    height: 50px;
+}
+
+iframe{
+    max-width: 100%;
+}
+
+footer{
+    bottom: 0px;
+    height: 100px;
+    background-color: black;
+    width: 100%;
+    position: fixed;
+
+}
+
+
+@media screen and (max-width: 1360px){
+    #categories{
+        order: 0;
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    aside{
+        margin-bottom: 40px;
+        background-color: rgba(20, 100, 22, 0.4);
+    }
+    nav > #navigation{
+        display: none;
+    }
+    nav > #secondNav{
+        display: block;
+    }
+    nav > #secondNav > div{
+        text-align: center;
+        padding: 5px;
+        border: 1px solid darkgreen;
+        background-color: rgba(15, 7, 18, 0.9);
+    }
+    nav > #secondNav > div:hover{
+        border: 5px outset rgba(14, 97, 43, 0.7);
+    }
+    nav > #secondNav > div:active{
+        border: 5px inset rgba(14, 97, 43, 0.7);
+    }
+    nav > #secondNav > div > a{
+        border: none;
+        color: limegreen;
+    }
+}
