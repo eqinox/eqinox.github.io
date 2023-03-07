@@ -77,7 +77,7 @@ export default (() => {
 					</Link>
 					<Link
 						md-margin="0 0px 8px 0px"
-						href="#products"
+						href="/contacts"
 						text-decoration-line="initial"
 						color="--dark"
 						font="--base"
@@ -87,7 +87,7 @@ export default (() => {
 						hover-opacity=".8"
 						md-font="normal 400 18px/1.5 &quot;Fira Sans&quot;, sans-serif"
 					>
-						Products
+						Contacts
 					</Link>
 					<Link
 						md-font="normal 400 18px/1.5 &quot;Fira Sans&quot;, sans-serif"
